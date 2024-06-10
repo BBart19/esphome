@@ -4,7 +4,6 @@ from esphome.const import (
     STATE_CLASS_MEASUREMENT,
     ICON_ARROW_EXPAND_VERTICAL,
     DEVICE_CLASS_DISTANCE,
-    UNIT_MILLIMETER,
 )
 
 CODEOWNERS = ["@BBart19"]
@@ -17,7 +16,7 @@ WaveshareTOFLaserRangeSensorB = waveshare_tof_laser_range_sensor_b_ns.class_(
 
 CONFIG_SCHEMA = sensor.sensor_schema(
     WaveshareTOFLaserRangeSensorB,
-    unit_of_measurement=UNIT_MILLIMETER,
+    unit_of_measurement="mm",
     icon=ICON_ARROW_EXPAND_VERTICAL,
     accuracy_decimals=0,
     state_class=STATE_CLASS_MEASUREMENT,
